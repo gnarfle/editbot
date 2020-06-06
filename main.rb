@@ -4,7 +4,7 @@ require 'yaml'
 
 Bundler.require(:default)
 
-BOT = RedditBot::Bot.new YAML.load(File.read "secrets.yaml"), ignore_captcha: true
+BOT = RedditBot::Bot.new YAML.load(File.read "secrets.yml"), ignore_captcha: true
 SUBREDDIT = "eugene"
 
 words = YAML.load(File.read "words.yaml")
